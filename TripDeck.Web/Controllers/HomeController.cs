@@ -1,31 +1,25 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using TripDeck.Web.Models;
+using TripDeck.Repository.ViewModels;
+using TripDeck.Service.Interface;
 
 namespace TripDeck.Web.Controllers;
 
-public class HomeController : Controller
+public class HomeController(IDestinationService destinationService) : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
-    {
-        _logger = logger;
-    }
+    private readonly IDestinationService _destinationService = destinationService;
 
     public IActionResult Index()
     {
         return View();
     }
 
-    public IActionResult Privacy()
+    #region GetActiveDestinations
+
+    public async Task<IActionResult> GetActiveDestinations()
     {
-        return View();
+        List<DestinationViewModel>? destinationViewModels = await _destinationService.GetActiveDestinationsAsync();
+        return Ok(destinationViewModels);
     }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    }
+    #endregion
 }
